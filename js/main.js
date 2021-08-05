@@ -1,7 +1,6 @@
-
 const panelTitle = 'Найти недвижимость'
 const popUpMessage = 'Здравствуйте! Я могу вам помочь в поиске недвижимости. Выберите свой мессенджер.'
-
+const timeToOpenPopUp = 10
 
 document.querySelector('.panel-title').innerHTML = panelTitle
 document.querySelector('.text_message').innerHTML = popUpMessage
@@ -25,3 +24,8 @@ close.addEventListener(
         popUp.classList.toggle('m-fadeOut')
     }
 )
+
+
+window.setTimeout(() => {
+    popUp.classList.add('m-fadeIn')
+}, timeToOpenPopUp * 1000)
