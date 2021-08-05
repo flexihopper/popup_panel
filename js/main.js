@@ -25,7 +25,11 @@ close.addEventListener(
     }
 )
 
+const session_storage = sessionStorage.getItem('open')
 
-window.setTimeout(() => {
-    popUp.classList.add('m-fadeIn')
-}, timeToOpenPopUp * 1000)
+if (!session_storage) {
+    window.setTimeout(() => {
+        popUp.classList.add('m-fadeIn');
+        sessionStorage.setItem('open', 'yes')
+    }, timeToOpenPopUp * 1000)
+}
