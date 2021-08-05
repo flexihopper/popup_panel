@@ -1,0 +1,140 @@
+.container {
+    right: 30px;
+    bottom: 0;
+    position: fixed;
+    z-index: 2147483648;
+    width: 300px;
+}
+
+
+.main-panel {
+    background: linear-gradient(
+            95deg, rgb(47, 50, 74) 20%, rgb(66, 72, 103) 80%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 34px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-panel:hover {
+    cursor: pointer;
+}
+
+.panel-title {
+    font-size: 14px;
+    font-family: Arial, serif;
+    font-style: normal;
+    padding-left: 16px;
+    color: rgb(240, 241, 241);
+    padding-top: 11px;
+}
+
+.panel-icon {
+    filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(116deg) brightness(98%) contrast(106%);
+    height: 28px;
+    padding-top: 5px;
+}
+
+.popup_panel {
+    position: absolute;
+    bottom: 58px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    z-index: 1000000;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2);
+}
+
+.m-fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.m-fadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.bottom_corner:after {
+    content: "" !important;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 25px;
+    bottom: -19px;
+    box-sizing: border-box;
+    border-color: transparent transparent #fff #fff;
+    border-style: solid;
+    border-width: 10px;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, .07)
+}
+
+.text_message {
+    border-radius: 12px;
+    background-color: #f1f0f0;
+    display: inline-block;
+    padding: 12px 16px;
+    max-width: 100%;
+    margin: 10px;
+    /*overflow: hidden;*/
+    word-wrap: break-word;
+    line-height: 19.6px;
+    text-indent: 0;
+}
+
+.code_messenger {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#bh-widget-button-root {
+    margin-bottom: 20px;
+}
+
+.close_button_img {
+    height: 25px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.close_button_img:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 320px) {
+    .container {
+        right: 10px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .container {
+        right: 30px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        right: 38px;
+    }
+}
+
+@media screen and (min-width: 411px) {
+    .container {
+        right: 56px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .container {
+        right: 57px;
+    }
+}
